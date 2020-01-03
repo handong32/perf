@@ -1,0 +1,9 @@
+~/perf/max_freq.py
+sleep 1
+wrmsr -a 0x1a0 0x4000850081
+sleep 1
+wrmsr -a 0x199 0x1D00
+sleep 1
+rdmsr -a 0x1a0
+rdmsr -a 0x199
+rdmsr -a 0x198
